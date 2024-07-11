@@ -1,5 +1,5 @@
 let listaDeNumeroSorteados = []
-let numeroLimite = 10;
+let numeroLimite = 1000;
 // Gera um número aleatório entre 1 e 10 e atribui à variável numeroSecreto
 let numeroSecreto = gerarNumeroAleatorio();
 // Inicializa a variável tentativas com 1 para contar as tentativas do jogador
@@ -19,7 +19,7 @@ function mensagemInicial() {
     // Exibe o título do jogo
     exibirTextonNaTela("h1", "Jogo do número secreto")
     // Exibe a instrução para o jogador
-    exibirTextonNaTela("p", "Digite um número entre 1 e 10.")
+    exibirTextonNaTela("p", `Digite um número entre 1 e ${numeroLimite}.`)
 }
 
 // Exibe o número secreto no console (para depuração)
